@@ -1,3 +1,4 @@
+
 ##########################################################
 #GETTING CLIMATE DATA temp, prec
 ##########################################################
@@ -22,6 +23,8 @@
 
 
 library(stringr)
+library(dplyr)
+
 getWC_data <- function(category=NULL, product=NULL, Product_resolution=NULL, period=NULL, SSP=NULL, GCM=NULL ){
   worldclimlink <- "https://www.worldclim.org"
   page <- read_html(worldclimlink)

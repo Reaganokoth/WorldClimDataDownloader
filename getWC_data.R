@@ -24,6 +24,7 @@
 
 library(stringr)
 library(dplyr)
+library(rvest)
 
 getWC_data <- function(category=NULL, product=NULL, Product_resolution=NULL, period=NULL, SSP=NULL, GCM=NULL ){
   worldclimlink <- "https://www.worldclim.org"
